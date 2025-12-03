@@ -1,52 +1,42 @@
-Flashcard Learning System in C
-Overview
+Flashcard Learning System (C Project)
+Introduction
 
-The Flashcard Learning System is a console-based project developed in the C programming language. It is designed to help users study and revise concepts by creating, storing, and reviewing flashcards. The system uses file handling techniques to save flashcard data for future access.
+The Flashcard Learning System is a text-based interactive learning tool developed using the C programming language. It allows users to create, save, search, quiz, and manage flashcards directly from the command line. The project demonstrates the use of data structures, modular programming, and file handling concepts in C.
 
-This project demonstrates the practical application of structures, file handling, user-defined functions, string handling, and random access logic in C programming.
+This application is designed for students preparing for exams, practicing definitions, or memorizing key concepts.
 
-Features
-
-Add flashcards with a question and answer
-
-View all stored flashcards
-
-Quiz mode with random question generation
-
-Search flashcards by keyword
-
-Delete flashcards based on keywords
-
-Persistent storage using a text file (flashcards.txt)
-
-Technologies Used
-Component	Description
-Programming Language	C
-Concepts Applied	File Handling, Structures, Functions, String Handling, Randomization
-Data Storage	Text file
-File Structure
+Key Features
+Feature	Description
+Add Flashcards	Users can create multiple flashcards with a question-answer format.
+View Flashcards	Displays all stored flashcards in a formatted manner.
+Quiz Mode	Randomly selects a flashcard and prompts the user to answer.
+Search Flashcards	Finds flashcards based on keywords entered by the user.
+Delete Flashcards	Removes a flashcard entry using search keywords.
+Persistent Storage	Flashcards are saved in a text file to allow long-term use.
+Technical Details
+Category	Implementation
+Language	C Programming
+Data Handling	File Handling using fopen, fgets, fprintf, remove, and rename
+Data Structure	struct Flashcard
+Modular Design	main.c, flashcard.c, and flashcard.h
+Randomization	rand() and srand(time(NULL)) for quiz mode
+Project File Structure
 Flashcard-Learning-System/
 │
-├── flashcard.h          # Header file containing declarations
-├── flashcard.c          # Function definitions
-├── main.c               # Main program file with menu and execution flow
-├── flashcards.txt       # Data file created during runtime
-└── README.md            # Project documentation
+├─ main.c              → Main execution file
+├─ flashcard.c         → Function definitions
+├─ flashcard.h         → Function declarations and structure definition
+├─ flashcards.txt      → Auto-generated storage file
+└─ README.md           → Documentation
 
-How to Compile and Run
-
-Open the terminal inside the project folder.
-
-Compile the program:
-
+Installation and Execution
+Step 1: Compile
 gcc main.c flashcard.c -o flashcard
 
-
-Run the compiled program:
-
+Step 2: Run
 ./flashcard
 
-Sample Output
+Sample Output (Menu Screenshot)
 ====== FLASHCARD LEARNING SYSTEM ======
 1. Add Flashcard
 2. View Flashcards
@@ -56,28 +46,27 @@ Sample Output
 6. Exit
 Enter your choice:
 
-Learning Outcomes
+Learning Objectives
 
-By completing this project, the following programming skills are demonstrated:
+This project was developed to strengthen the following concepts:
 
-Working with file I/O in C (fopen, fprintf, fgets, remove, rename)
+Understanding and using file handling in C
 
-Implementing modular programming using header files
+Modular programming with header and implementation files
 
-Creating and using custom data structures
+Secure input handling using strings and buffers
 
-Handling strings and user input safely
+Use of structures and function decomposition
 
-Using randomization functions (rand() and srand())
+Logic building with menu-driven systems
 
-Future Improvements
+Future Enhancements
+Planned Feature	Status
+Edit flashcards	Planned
+Difficulty-based levels	Planned
+Export flashcards to CSV or PDF	Under consideration
+Statistical performance tracking	Under consideration
+GUI version using GTK or C++ Qt	Future scope
+Conclusion
 
-Edit flashcard functionality
-
-Timer-based quiz mode
-
-Difficulty-based categorization
-
-Export flashcards to PDF or CSV
-
-Graphical user interface version using external libraries
+The Flashcard Learning System is a functional learning aid built using core concepts of C programming. Its modular structure, persistent storage mechanism, and interactive interface make it a good example of applied programming fundamentals and practical problem solving.
