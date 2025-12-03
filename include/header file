@@ -1,1 +1,25 @@
+#ifndef FLASHCARD_H
+#define FLASHCARD_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+#define FILENAME "flashcards.txt"
+
+// Structure for storing question and answer
+struct Flashcard {
+    char question[200];
+    char answer[200];
+};
+
+// Function declarations
+void addFlashcard();
+void viewFlashcards();
+void quizMode();
+void searchFlashcard();
+void deleteFlashcard();
+void removeNewline(char *str);
+
+#endif
