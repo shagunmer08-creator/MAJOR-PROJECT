@@ -21,6 +21,8 @@ Data Structure	struct Flashcard
 Modular Design	main.c, flashcard.c, and flashcard.h
 Randomization	rand() and srand(time(NULL)) for quiz mode
 Project File Structure
+
+
 Flashcard-Learning-System/
 │
 ├─ main.c              → Main execution file
@@ -29,12 +31,18 @@ Flashcard-Learning-System/
 ├─ flashcards.txt      → Auto-generated storage file
 └─ README.md           → Documentation
 
+
+
 Installation and Execution
 Step 1: Compile
 gcc main.c flashcard.c -o flashcard
 
 Step 2: Run
 ./flashcard
+
+
+
+
 
 Sample Output (Menu Screenshot)
 ====== FLASHCARD LEARNING SYSTEM ======
