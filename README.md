@@ -25,11 +25,17 @@ Project File Structure
 
 Flashcard-Learning-System/
 │
+
 ├─ main.c              → Main execution file
+
 ├─ flashcard.c         → Function definitions
+
 ├─ flashcard.h         → Function declarations and structure definition
+
 ├─ flashcards.txt      → Auto-generated storage file
+
 └─ README.md           → Documentation
+
 
 
 
